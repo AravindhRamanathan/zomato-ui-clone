@@ -1,0 +1,148 @@
+.Header{
+    margin-top:8px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.zomato-logo>img{
+    width:130px;
+    height:28px;
+    cursor: pointer;
+}
+.Header-form{
+    border:none;
+    margin-left:30px;
+    line-height:35px;
+    border-radius:8px;
+    width:100%;
+    /* box-shadow: -3px 4px 19px -3px rgba(94,88,88,0.27);
+    -webkit-box-shadow: -3px 4px 19px -3px rgba(94,88,88,0.27);
+    -moz-box-shadow: -3px 4px 19px -3px rgba(94,88,88,0.27); */
+    /* box-shadow: -3px 4px 19px -1px rgba(94,88,88,0.27);
+-webkit-box-shadow: -3px 4px 19px -1px rgba(94,88,88,0.27);
+-moz-box-shadow: -3px 4px 19px -1px rgba(94,88,88,0.27); */
+box-shadow: -1px 1px 17px -1px rgba(216,202,202,0.79);
+-webkit-box-shadow: -1px 1px 17px -1px rgba(216,202,202,0.79);
+-moz-box-shadow: -1px 1px 17px -1px rgba(216,202,202,0.79);
+}
+
+.form-elements{
+    display:inline-flex;
+    padding:10px;
+    align-items: center;
+    width:100%;
+}
+.form-elements>select{
+    border:none;
+    color:black;
+    padding:10px;
+    font-size:16px;
+    opacity:0.8;
+    width:30%;
+}
+.form-elements>select:focus,.form-elements>select>option:focus{
+    outline:none;
+    border:none;
+}
+.vertical-line{
+    /* display: inline-flex; */
+    height:20px;
+    background-color:black;
+    width:0px;
+    border:1px solid black;
+    margin-left:7px;
+    opacity:0.1;
+}
+.Search-Symbol{
+    opacity:0.6;
+    margin-left:10px;
+}
+/* .Header-Search-Input{
+    width:100%;
+} */
+.Header-Search-Input>input{
+    width:100%;
+    line-height: 16px;
+    font-size:16px;
+    margin-left:5px;
+    z-index:-100;
+    border: none;
+    /* padding:10px; */
+}
+.Header-Search-Input>input:focus{
+    outline: none;;
+}
+.hamburger-icon{
+    visibility: hidden;
+}
+.user-actions{
+    display:flex;
+    flex-direction: row;
+    width:20%;
+    flex-wrap: nowrap;
+    font-size:18px;
+    opacity:0.6; 
+    margin-left:auto;
+    margin-right: 20px;
+}
+.login,.signup{
+    display:flex;
+    flex-wrap: nowrap;
+    /* justify-content: flex-end;  */
+    flex-grow: 1;  
+}
+.user-actions.active{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    background-color: blue;
+    align-items: center;
+}
+@media (max-width:768px){
+    .Header-form{
+        /* display: none; */
+        visibility: hidden; 
+    }
+    .Header{
+        width:100%;
+        margin-top:0px;
+    }
+    /* .zomato-logo{
+        margin-right:0px;
+        margin-left: auto;;
+    } */
+    .zomato-logo>img{
+        width:80px;
+        height:28px;
+        cursor: pointer;
+    }
+    
+  
+    .hamburger-icon{
+        visibility: visible;
+        display:inline-block;;
+        position: absolute;
+        top:1rem;
+        right:20px;
+        cursor:pointer;
+    }
+     .login,.signup{
+        visibility:hidden;
+    } 
+    /* .User-Actions{
+        width:200px;
+        font-size:16px;
+        opacity:0.6;
+        margin-right: 0px;
+        margin-left:auto;
+    } */
+    /* .User-Actions{
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+    } */
+}
+

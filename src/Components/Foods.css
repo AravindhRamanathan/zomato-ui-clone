@@ -1,0 +1,13 @@
+.foods{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:25px;
+    /* flex-grow: auto; */
+}
+@media(max-width:768px)
+{
+    .foods{
+        gap:32px;
+    }
+}

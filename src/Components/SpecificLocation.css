@@ -1,0 +1,19 @@
+.Specific-Location{
+    display:block;
+    margin-top:8px;
+    color:rgb(114, 106, 106);
+}
+.Specific-Location>p{
+    display: inline-block;
+    font-size:12px;
+    cursor: pointer;
+}
+.Specific-Location>p:not(:first-child){
+    margin-left:10px;
+}
+.Specific-Location>p:not(:last-child):hover{
+    color:orange;
+}
+.Specific-Location>p:last-child{
+    opacity:0.5;
+}

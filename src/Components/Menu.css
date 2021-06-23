@@ -1,0 +1,73 @@
+.Menu{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    gap:2rem;
+    opacity:1;
+    color:rgb(36, 35, 35);
+}
+.menu-img{
+    width:32px;
+    height:32px; 
+    
+}
+.image{
+    padding:8px;
+    border:none;
+    border-radius: 50%;
+    background-color: rgba(243, 233, 233, 0.719);
+    opacity:0.8;
+}
+.image-focus{
+    padding:8px;
+    border:none;
+    border-radius: 50%;
+    background-color: rgb(243, 225, 193);
+    opacity:0.8;
+}
+
+.menu-span{
+    font-size:20px;
+    margin-left:8px;
+    margin-top:15px;
+    opacity:0.8;
+}
+.delivery{
+    display: inline-flex;
+    flex-direction: row;
+    padding:15px;
+    border-bottom: 3px solid orangered;
+    color:orangered;
+    cursor:pointer;
+    text-decoration: none;;
+}
+.dinning,.nightlife,.nutrition{
+    display: inline-flex;
+    flex-direction: row;
+    padding:15px;
+    color:black;
+    cursor: pointer;
+    text-decoration: none;;
+}
+
+hr{
+    margin-top:-2px;
+    opacity:0.3;
+}
+@media (max-width:768px){
+
+    .delivery,.dinning,.nightlife,.nutrition{
+        padding:8px;
+    }
+    .menu-span{
+        font-size:12px;
+        margin-left:5px;
+    }
+    .menu-img{
+        width:16px;
+        height:16px;
+    }
+    .Menu{
+        gap:10px;
+    }
+}

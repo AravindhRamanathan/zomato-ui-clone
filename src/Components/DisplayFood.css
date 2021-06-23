@@ -1,0 +1,107 @@
+.display-food{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    line-height:1px;
+    margin-top:10px;
+    cursor:pointer;
+    /* margin-right:20px; */
+}
+.display-image-img{
+    overflow:hidden;
+}
+.food-image{
+    border-radius:8px;
+    width:350px;
+    height:250px;
+    /* transition :transform .5s ease-in-out; */
+} 
+.display-image-img:hover img{
+    transition :.3s ease-in-out;
+    transform:scale(1.1);
+}
+
+.image1{
+    display:flex;
+    flex-direction: column;
+}
+/* .image1:hover{
+    transform: scaleY(1.03);
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+} */
+.caption{
+    font-size:20px;
+    /* margin-top:-5px; */
+    /* font-weight: 650; */
+}
+.star-rating-icon-background{
+    box-sizing: border-box;
+    display:inline-block;
+    background-color:rgba(238, 68, 38, 0.993);
+    margin:2px;
+    padding:5px;
+    border-radius:5px;
+}
+.description-review{
+    margin-left:10px;
+    display: inline-block;
+    color:darkgrey;
+    font-size:16px;
+}
+.type-of-food{
+    color:gray;
+    display:inline-flex;
+}
+.per-unit-price{
+    display:flex;
+    flex-direction: row;;
+    color:grey;
+}
+.seperator-dot{
+    border-radius:50%;
+    background-color:grey;
+    width:6px;
+    margin-left:10px;
+    margin-right: 10px;
+    height:6px;
+}
+.promoted-or-not{
+    color:grey;
+    margin-top: -5px;;
+    margin-bottom: 15px;;
+}
+@media (max-width:768px)
+{
+    .display-food{
+        /* border:1px solid rgb(224, 221, 221); */
+        border-radius:20px;
+    }
+    .food-image{
+        border-radius:8px;
+        width:200px;
+        height:150px;
+    } 
+    .caption{
+        font-size:15px;
+    }
+    .description-review{
+        margin-left:0px;
+        margin-top:15px;
+        display:block;
+        color:black;
+        font-size:15px;
+    }
+    .type-of-food{
+        color:gray;
+        display:inline-flex;
+        font-size:15px;
+        margin-top:15px;
+    }
+    .per-unit-price{
+        display:flex;
+        flex-direction: row;;
+        color:grey;
+        font-size:12px;
+    }
+} 

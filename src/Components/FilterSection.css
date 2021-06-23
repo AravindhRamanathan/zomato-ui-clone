@@ -1,0 +1,26 @@
+.filter-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap:16px;
+    margin-top:20px;
+}
+
+.filter,.rating,.safe,.pureveg,.delivery-time,.greatoffers{
+    border:1px solid grey;
+    border-radius: 8px;
+    padding:5px;
+    color:grey;
+}
+.filter:hover,.rating:hover,.safe:hover,.pureveg:hover,.delivery-time:hover,.greatoffers:hover{
+    background-color:rgba(233, 227, 227, 0.342);
+    cursor: pointer;
+}
+.imagetransfer{
+    display: inline-block;
+    transform: rotate(90deg);
+}
+.filter-span{
+    /* border:1px solid black; */
+    font-size: 12px;;
+}
