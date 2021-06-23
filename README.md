@@ -1,3 +1,9 @@
+# project-preview
+![Screenshot (4)](https://user-images.githubusercontent.com/52904438/123066046-5800db00-d42d-11eb-8129-e5d34943be90.png)
+just created the elements for a preview which is highly responsive and needed to enable routing in the further updates
+# re-rendered each food item as components 
+![Screenshot (5)](https://user-images.githubusercontent.com/52904438/123066389-a6ae7500-d42d-11eb-9190-2a2ad7a82b2b.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
